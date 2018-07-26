@@ -1,0 +1,25 @@
+
+
+<div class="container">
+<div class="card-body">
+    <div class="card-header">
+        <h3 class="mb-0">Login </h3>
+        <span *ngIf="msg">Invalid login details</span>
+      </div>
+<form (ngSubmit)="login()">
+<table class="table table-striped table-bordered">
+  <tbody>
+    <tr>
+    <td>Username</td><td><input type="text" name="UserId" [(ngModel)]="UserId"class="form-control"></td>
+    </tr>
+    <tr>
+        <td>Username</td><td><input type="text" name="Id" [(ngModel)]="Id" class="form-control"></td>
+    </tr>
+    <tr>
+        <td colspan="2"><input type="submit" value="Login" class="btn btn-success"></td>
+        </tr>
+  </tbody>
+</table>
+</form>
+</div>
+</div>

@@ -1,0 +1,87 @@
+
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+
+                    <!-- form card login -->
+                    <div class="card rounded-0">
+                        <div class="card-header">
+                            <h3 class="mb-0">
+
+                                <nav class="navbar navbar-inverse top-container">
+                                    <div class="container-fluid">
+                                      <div class="navbar-header">
+
+                                       <a ><span class=" card-header navbar-brand"[ngStyle]="{'color': 'blue'}">MyApp</span> </a>
+                                      </div>
+
+
+
+                                          <div class="navbar-header navbar-right ">
+
+                                              <a href=""><span class=" card-header navbar-brand"[ngStyle]="{'color': 'blue'}">LogOut</span> </a>
+                                             </div>
+
+
+                                    </div>
+                                  </nav>
+                                  <br>
+
+                                  <div class="card-header">
+                                      <h5>DashBoard Component </h5>
+
+                                  </div>
+                            </h3>
+
+                        </div>
+                        <div class="card-body">
+
+                            <table class="table table-bordered table-striped">
+                                <thead>
+
+                                    <tr>
+                                        <td>
+                                            User Id
+                                        </td>
+                                        <td>
+                                           Id
+                                        </td>
+                                        <td>
+                                           Title
+                                        </td>
+
+                                        <td>
+                                           Body
+                                        </td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                     <tr *ngFor="let e of dashBoards;let i = index">
+                                        <td >{{e.userId}}</td>
+                                       <td (click) = "sendId(e.id)"><a>{{e.id}}</a></td>
+                                        <td>{{e.title}}</td>
+
+                                        <td>{{e.body}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <!--/card-block-->
+                    </div>
+                    <!-- /form card login -->
+
+                </div>
+
+
+            </div>
+            <!--/row-->
+
+        </div>
+        <!--/col-->
+    </div>
+    <!--/row-->
+  </div>
